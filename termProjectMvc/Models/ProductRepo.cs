@@ -15,13 +15,13 @@ namespace termProjectMvc.Models
         public void save(product p, String c, String b, String f)
         {
             category cat1 = db.categories.First(x => x.name.Equals(c));
-            brand br = db.brands.First(x => x.name == b);
+            //brand br = db.brands.First(x => x.name == b);
             p.cid_ = cat1.Id;
-            p.bid = br.Id;
+            //p.bid = br.Id;
             p.imageName = f;
             db.products.Add(p);
             db.SaveChanges();
- 
+    
         }
         public void delete(int id)
         {

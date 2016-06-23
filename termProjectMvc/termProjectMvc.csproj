@@ -353,11 +353,11 @@
     <Content Include="Views\Home\feedback.cshtml" />
     <Content Include="Views\Home\login.cshtml" />
     <Content Include="Views\Home\signup.cshtml" />
-    <Content Include="Views\Categories\cellphones.cshtml" />
-    <Content Include="Views\Categories\laptops.cshtml" />
-    <Content Include="Views\Categories\tablets.cshtml" />
-    <Content Include="Views\Categories\cameras.cshtml" />
-    <Content Include="Views\Categories\computeracc.cshtml" />
+    <Content Include="Views\Categories\biography.cshtml" />
+    <Content Include="Views\Categories\islamic.cshtml" />
+    <Content Include="Views\Categories\novels.cshtml" />
+    <Content Include="Views\Categories\adab.cshtml" />
+    <Content Include="Views\Categories\childeren.cshtml" />
     <Content Include="Views\Categories\all.cshtml" />
     <Content Include="Views\Brands\apple.cshtml" />
     <Content Include="Views\Brands\htc.cshtml" />
@@ -383,6 +383,15 @@
     <Content Include="Views\Home\details.cshtml" />
     <Content Include="Views\Home\test.cshtml" />
     <Content Include="Views\Home\search.cshtml" />
+    <Content Include="Views\Categories\stories.cshtml" />
+    <Content Include="Views\Categories\comedy.cshtml" />
+    <Content Include="Views\Categories\computer.cshtml" />
+    <Content Include="Views\Categories\technology.cshtml" />
+    <Content Include="Views\Categories\programming.cshtml" />
+    <Content Include="Views\Categories\science.cshtml" />
+    <Content Include="Views\Categories\poetry.cshtml" />
+    <Content Include="Views\Categories\fashion.cshtml" />
+    <Content Include="Views\Categories\showbiz.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Files\" />

@@ -55,9 +55,8 @@ namespace termProjectMvc.Controllers
             }
             string filename = @"/Files/" + file.FileName;
             //p.imageName = filename;
-            String b = Request["br"];
             String cat = Request["c1"];
-            pro.save(p, cat, b, filename);
+            pro.save(p, cat, null, filename);
             return RedirectToAction("adminView");
         }
         

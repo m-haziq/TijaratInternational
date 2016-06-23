@@ -11,7 +11,7 @@ namespace termProjectMvc.Controllers
         //
         // GET: /Categories/
         Database1Entities6 db = new Database1Entities6();
-        public ActionResult cellphones()
+        public ActionResult adab()
         {
             List<product> li = new List<product>();
             List<product> p = db.products.ToList();
@@ -25,7 +25,7 @@ namespace termProjectMvc.Controllers
             //return li;
             return View(li);
         }
-        public ActionResult laptops()
+        public ActionResult biography()
         {
             List<product> li = new List<product>();
             List<product> p = db.products.ToList();
@@ -39,7 +39,7 @@ namespace termProjectMvc.Controllers
             //return li;
             return View(li);
         }
-        public ActionResult tablets()
+        public ActionResult childeren()
         {
             List<product> li = new List<product>();
             List<product> p = db.products.ToList();
@@ -53,7 +53,7 @@ namespace termProjectMvc.Controllers
             //return li;
             return View(li);
         }
-        public ActionResult cameras()
+        public ActionResult islamic()
         {
             List<product> li = new List<product>();
             List<product> p = db.products.ToList();
@@ -67,13 +67,130 @@ namespace termProjectMvc.Controllers
             //return li;
             return View(li);
         }
-        public ActionResult computeracc()
+        public ActionResult novels()
         {
             List<product> li = new List<product>();
             List<product> p = db.products.ToList();
             foreach (var x in p)
             {
                 if (x.cid_ == 5)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult stories()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 6)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult comedy()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 7)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult computer()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 8)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult technology()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 9)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult programming()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 10)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult science()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 11)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult poetry()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 12)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult fashion()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 13)
+                {
+                    li.Add(x);
+                }
+            }
+            return View(li);
+        }
+        public ActionResult showbiz()
+        {
+            List<product> li = new List<product>();
+            List<product> p = db.products.ToList();
+            foreach (var x in p)
+            {
+                if (x.cid_ == 14)
                 {
                     li.Add(x);
                 }

@@ -197,9 +197,6 @@ C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\t
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\Ninject.dll
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\Ninject.Web.Common.dll
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\Ninject.Web.Mvc.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Net.Http.Formatting.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Http.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Http.WebHost.dll
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Mvc.dll
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Optimization.dll
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Providers.dll
@@ -214,46 +211,11 @@ C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\t
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\Ninject.Web.Mvc.xml
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\EntityFramework.xml
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\Newtonsoft.Json.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Net.Http.Formatting.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Http.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Http.WebHost.xml
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Mvc.xml
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.Razor.xml
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.xml
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.Deployment.xml
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.Razor.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\obj\Debug\termProjectMvc.csprojResolveAssemblyReference.cache
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\obj\Debug\termProjectMvc.dll
 C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\obj\Debug\termProjectMvc.pdb
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\termProjectMvc.dll.config
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\termProjectMvc.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\termProjectMvc.pdb
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Antlr3.Runtime.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\EntityFramework.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Newtonsoft.Json.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Ninject.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Ninject.Web.Common.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Ninject.Web.Mvc.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.Mvc.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.Optimization.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.Providers.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.Razor.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.Deployment.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.Razor.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\WebActivatorEx.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\WebGrease.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Ninject.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Ninject.Web.Common.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Ninject.Web.Mvc.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\EntityFramework.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\Newtonsoft.Json.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.Mvc.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.Razor.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.Deployment.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\bin\System.Web.WebPages.Razor.xml
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\obj\Debug\termProjectMvc.csprojResolveAssemblyReference.cache
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\obj\Debug\termProjectMvc.dll
-C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\Ele project\termProjectMvc\termProjectMvc\obj\Debug\termProjectMvc.pdb
+C:\Users\M Haziq\Documents\Visual Studio 2013\Projects\ProjectX\termProjectMvc\termProjectMvc\obj\Debug\termProjectMvc.csprojResolveAssemblyReference.cache
