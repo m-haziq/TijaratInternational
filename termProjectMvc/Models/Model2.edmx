@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Database1Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Database1Model1StoreContainer">
+          <EntitySet Name="brands" EntityType="Database1Model1.Store.brands" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="category" EntityType="Database1Model1.Store.category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="products" EntityType="Database1Model1.Store.products" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="user" EntityType="Database1Model1.Store.user" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="user1" EntityType="Database1Model1.Store.user1" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_products_brands" Association="Database1Model1.Store.FK_products_brands">
+            <End Role="brands" EntitySet="brands" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_products_category" Association="Database1Model1.Store.FK_products_category">
+            <End Role="category" EntitySet="category" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_products_user" Association="Database1Model1.Store.FK_products_user">
+            <End Role="user" EntitySet="user" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_products_user1" Association="Database1Model1.Store.FK_products_user1">
+            <End Role="user1" EntitySet="user1" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="brands">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="products">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="varchar" MaxLength="50" />
+          <Property Name="specification" Type="varchar(max)" />
+          <Property Name="price" Type="varchar" MaxLength="50" />
+          <Property Name="cid " Type="int" />
+          <Property Name="bid" Type="int" />
+          <Property Name="imageName" Type="varchar(max)" />
+          <Property Name="uid" Type="int" />
+          <Property Name="uid1" Type="int" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="password" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="user1">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="phone" Type="varchar" MaxLength="50" />
+          <Property Name="country" Type="varchar" MaxLength="50" />
+          <Property Name="password" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_products_brands">
+          <End Role="brands" Type="Database1Model1.Store.brands" Multiplicity="0..1" />
+          <End Role="products" Type="Database1Model1.Store.products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="brands">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="bid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_products_category">
+          <End Role="category" Type="Database1Model1.Store.category" Multiplicity="0..1" />
+          <End Role="products" Type="Database1Model1.Store.products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="cid " />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_products_user">
+          <End Role="user" Type="Database1Model1.Store.user" Multiplicity="0..1" />
+          <End Role="products" Type="Database1Model1.Store.products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="uid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_products_user1">
+          <End Role="user1" Type="Database1Model1.Store.user1" Multiplicity="0..1" />
+          <End Role="products" Type="Database1Model1.Store.products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user1">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="uid1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Database1Model1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Database1Entities6" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="brands" EntityType="Database1Model1.brand" />
+          <EntitySet Name="categories" EntityType="Database1Model1.category" />
+          <EntitySet Name="products" EntityType="Database1Model1.product" />
+          <EntitySet Name="users" EntityType="Database1Model1.user" />
+          <EntitySet Name="user1" EntityType="Database1Model1.user1" />
+          <AssociationSet Name="FK_products_brands" Association="Database1Model1.FK_products_brands">
+            <End Role="brands" EntitySet="brands" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_products_category" Association="Database1Model1.FK_products_category">
+            <End Role="category" EntitySet="categories" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_products_user" Association="Database1Model1.FK_products_user">
+            <End Role="user" EntitySet="users" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_products_user1" Association="Database1Model1.FK_products_user1">
+            <End Role="user1" EntitySet="user1" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="brand">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="products" Relationship="Database1Model1.FK_products_brands" FromRole="brands" ToRole="products" />
+        </EntityType>
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="products" Relationship="Database1Model1.FK_products_category" FromRole="category" ToRole="products" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="specification" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="price" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="cid_" Type="Int32" />
+          <Property Name="bid" Type="Int32" />
+          <Property Name="imageName" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="uid" Type="Int32" />
+          <Property Name="uid1" Type="Int32" />
+          <NavigationProperty Name="brand" Relationship="Database1Model1.FK_products_brands" FromRole="products" ToRole="brands" />
+          <NavigationProperty Name="category" Relationship="Database1Model1.FK_products_category" FromRole="products" ToRole="category" />
+          <NavigationProperty Name="user" Relationship="Database1Model1.FK_products_user" FromRole="products" ToRole="user" />
+          <NavigationProperty Name="user1" Relationship="Database1Model1.FK_products_user1" FromRole="products" ToRole="user1" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="products" Relationship="Database1Model1.FK_products_user" FromRole="user" ToRole="products" />
+        </EntityType>
+        <EntityType Name="user1">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="phone" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="products" Relationship="Database1Model1.FK_products_user1" FromRole="user1" ToRole="products" />
+        </EntityType>
+        <Association Name="FK_products_brands">
+          <End Role="brands" Type="Database1Model1.brand" Multiplicity="0..1" />
+          <End Role="products" Type="Database1Model1.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="brands">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="bid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_products_category">
+          <End Role="category" Type="Database1Model1.category" Multiplicity="0..1" />
+          <End Role="products" Type="Database1Model1.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="cid_" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_products_user">
+          <End Role="user" Type="Database1Model1.user" Multiplicity="0..1" />
+          <End Role="products" Type="Database1Model1.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="uid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_products_user1">
+          <End Role="user1" Type="Database1Model1.user1" Multiplicity="0..1" />
+          <End Role="products" Type="Database1Model1.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user1">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="uid1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Database1Model1StoreContainer" CdmEntityContainer="Database1Entities6">
+          <EntitySetMapping Name="brands">
+            <EntityTypeMapping TypeName="Database1Model1.brand">
+              <MappingFragment StoreEntitySet="brands">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="categories">
+            <EntityTypeMapping TypeName="Database1Model1.category">
+              <MappingFragment StoreEntitySet="category">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="products">
+            <EntityTypeMapping TypeName="Database1Model1.product">
+              <MappingFragment StoreEntitySet="products">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="specification" ColumnName="specification" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="cid_" ColumnName="cid " />
+                <ScalarProperty Name="bid" ColumnName="bid" />
+                <ScalarProperty Name="imageName" ColumnName="imageName" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="uid1" ColumnName="uid1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="Database1Model1.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="user1">
+            <EntityTypeMapping TypeName="Database1Model1.user1">
+              <MappingFragment StoreEntitySet="user1">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
